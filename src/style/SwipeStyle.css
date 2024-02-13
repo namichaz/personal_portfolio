@@ -1,0 +1,10 @@
+.sample-slider {
+  width: 60%;
+}
+.sample-slider img {
+  width: 100%;
+  filter: brightness(70%);
+}
+.sample-slider .swiper-wrapper {
+  transition-timing-function: linear;
+}

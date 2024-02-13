@@ -10,16 +10,18 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ContentCutIcon from "@mui/icons-material/ContentCut";
+import { useNavigate } from "react-router-dom";
 
 const pages = ["profile", "skills", "hobby"];
 
 function Header() {
+  const navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    console.log("event.currentTarget=", event.currentTarget);
     setAnchorElNav(event.currentTarget);
   };
 
@@ -27,23 +29,36 @@ function Header() {
     setAnchorElNav(null);
   };
 
+  const handleSelectMenu = (event: React.MouseEvent<HTMLElement>) => {
+    console.log("event.currentTarget=", event.currentTarget.textContent);
+  };
+  const handleSelectMenu2 = (event: React.MouseEvent<HTMLElement>) => {
+    const path = event.currentTarget.textContent;
+    navigate(`/${path}`);
+  };
+
   return (
     <AppBar position="static" style={{ backgroundColor: "lightgray" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <ContentCutIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <ContentCutIcon
+            sx={{
+              display: { xs: "none", md: "flex", color: "#FFFF9E" },
+              mr: 1,
+            }}
+          />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#FFFF9E",
               textDecoration: "none",
             }}
           >
@@ -80,7 +95,7 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleSelectMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -91,7 +106,7 @@ function Header() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -109,7 +124,7 @@ function Header() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={handleSelectMenu2}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
