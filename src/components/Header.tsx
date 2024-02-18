@@ -30,7 +30,8 @@ function Header() {
   };
 
   const handleSelectMenu = (event: React.MouseEvent<HTMLElement>) => {
-    console.log("event.currentTarget=", event.currentTarget.textContent);
+    const path = event.currentTarget.textContent;
+    navigate(`/${path}`);
   };
   const handleSelectMenu2 = (event: React.MouseEvent<HTMLElement>) => {
     const path = event.currentTarget.textContent;
@@ -38,7 +39,13 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "lightgray" }}>
+    <AppBar
+      position="static"
+      style={{
+        backgroundColor: "lightgray",
+        borderBottom: "0.1rem solid",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <ContentCutIcon

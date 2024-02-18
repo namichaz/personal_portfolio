@@ -23,16 +23,16 @@ export default function SampleSlider() {
       speed={3000}
     >
       <SwiperSlide>
-        <img src={cut} />
+        <img src={cut} alt="cut_image" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={ny1} />
+        <img src={ny1} alt="ny_image1" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={ny2} />
+        <img src={ny2} alt="ny_image2" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={mexican} />
+        <img src={mexican} alt="mexicanfood_image" />
       </SwiperSlide>
     </Swiper>
   );

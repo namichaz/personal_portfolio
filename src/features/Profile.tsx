@@ -3,6 +3,8 @@ import { css } from "@emotion/react";
 import React from "react";
 import profilePic from "../images/profile.jpeg";
 import Slider from "components/Slider";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 export const Profile = () => {
   const articleStyle = css({
@@ -14,10 +16,11 @@ export const Profile = () => {
   const nameStyle = css({
     letterSpacing: 2,
     fontFamily: "monospace",
-    fontSize: 36,
+    fontSize: 30,
     display: "flex",
     paddingLeft: "25%",
     color: "#FFFF9E",
+    justifyContent: "space-between",
   });
 
   const topicStyle = css({
@@ -26,42 +29,46 @@ export const Profile = () => {
     fontFamily: "monospace",
     fontSize: 26,
     fontWeight: "bold",
-    paddingLeft: "25%",
+    padding: "0 25%",
     color: "#FFFF9E",
   });
 
   const yearStyle = css({
     display: "flex",
-    fontSize: 22,
+    fontSize: 16,
     fontFamily: "monospace",
-    paddingLeft: "25%",
+    padding: "0 25%",
   });
   const textStyle = css({
-    fontSize: 22,
+    fontSize: 16,
     fontFamily: "monospace",
-    paddingLeft: "25%",
+    padding: "0 25%",
     textAlign: "start",
   });
   const textStyle2 = css({
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: "monospace",
-    paddingLeft: "25%",
+    padding: "0 25%",
     paddingTop: 30,
     // opacity: 0.5,
   });
 
   return (
     <>
+      <Header />
       <article css={articleStyle}>
         <div css={textStyle2}>なみかわ たつや</div>
         <section css={nameStyle}>
           <div>Tatsuya Namikawa</div>
-          <div style={{ paddingLeft: 150 }}>
+        </section>
+        <section style={{ paddingLeft: "60%" }}>
+          <div style={{ display: "flex" }}>
             <img
               style={{
                 borderRadius: "50%",
-                width: 200,
-                height: 200,
+                width: "100%",
+                height: "auto",
+                maxWidth: "200px",
               }}
               src={profilePic}
               alt=""
@@ -126,6 +133,7 @@ export const Profile = () => {
           <Slider />
         </section>
       </article>
+      <Footer />
     </>
   );
 };

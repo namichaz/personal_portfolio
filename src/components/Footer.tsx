@@ -7,6 +7,7 @@ const Footer = () => {
         backgroundColor: "lightgray",
         color: "white",
         textAlign: "center",
+        borderTop: "0.1rem solid",
       }}
     >
       © 2024 Tatsuya Namikawa. All Rights Reserved.

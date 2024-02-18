@@ -4,9 +4,6 @@ import React, { useState } from "react";
 import Header from "components/Header";
 import Footer from "components/Footer";
 import homePic from "../images/home.jpeg";
-import IconLabelButton from "components/IconLabelButton";
-import { Profile } from "./Profile";
-import { Skills } from "./Skills";
 
 export const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -28,8 +25,9 @@ export const Home = () => {
 
   const imageStyle = css({
     width: "100%",
-    height: "100vh",
-    maxWidth: "auto",
+    height: "auto",
+    maxHeight: "850px",
+    maxWidth: "100%",
     minWidth: "auto",
     position: "relative",
     transition: "filter 0.3s ease-in-out",
@@ -37,7 +35,7 @@ export const Home = () => {
 
   const textOntheImage = css({
     color: "white",
-    fontSize: "40px",
+    fontSize: "1.5rem",
     fontFamily: "monospace",
     position: "absolute",
     top: "50%",
@@ -50,25 +48,12 @@ export const Home = () => {
     pointerEvents: "none", // マウスイベントを無効化
     letterSpacing: "2px",
   });
-  const textOntheButton = css({
-    color: "white",
-    fontSize: "40px",
-    fontFamily: "monospace",
-    position: "absolute",
-    top: "60%",
-    left: "41%",
-    transform: "translate(-50%, -50%)",
-    textAlign: "start",
-    zIndex: 2,
-    opacity: isHovered ? 1 : 0, // ホバー時には不透明にする
-    transition: "opacity 0.3s ease-in-out",
-    pointerEvents: "auto",
-    letterSpacing: "2px",
-  });
 
   return (
     <main css={mainStyle}>
-      <Header />
+      <div>
+        <Header />
+      </div>
       <article css={imageContainerStyle}>
         <img
           src={homePic}
@@ -85,8 +70,6 @@ export const Home = () => {
           This is my personal portfolio
         </div>
       </article>
-      <Profile />
-      <Skills />
       <Footer />
     </main>
   );
