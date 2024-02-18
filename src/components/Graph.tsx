@@ -29,7 +29,7 @@ function PieCenterLabel({ children }: { children: React.ReactNode }) {
     <StyledText
       x={left + width / 2}
       y={top + height / 2}
-      style={{ fontSize: "2rem" }}
+      style={{ fontSize: "3rem" }}
     >
       {children}
     </StyledText>
