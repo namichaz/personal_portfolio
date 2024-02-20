@@ -90,7 +90,6 @@ function Header() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              href="/"
             >
               <MenuIcon />
             </IconButton>

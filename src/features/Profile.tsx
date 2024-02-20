@@ -89,7 +89,7 @@ export const Profile = () => {
           >
             <div css={yearStyle}>
               <div style={{ fontWeight: "bold" }}>1988</div>
-              <div>&ensp;&ensp;Born in Osaka(大阪), Japan</div>
+              <div>&ensp;&ensp;兵庫県生まれ</div>
             </div>
           </motion.div>
           <motion.div
@@ -99,9 +99,7 @@ export const Profile = () => {
           >
             <div css={yearStyle}>
               <div style={{ fontWeight: "bold" }}>2009</div>
-              <div>
-                &ensp;&ensp;Graduate Kansai Beauty Colledge(関西美容専門学校)
-              </div>
+              <div>&ensp;&ensp;関西美容専門学校 卒業</div>
             </div>
           </motion.div>
           <motion.div
@@ -111,9 +109,7 @@ export const Profile = () => {
           >
             <div css={yearStyle}>
               <div style={{ fontWeight: "bold" }}>2009</div>
-              <div>
-                &ensp;&ensp;Start Working as a Hair Stylist in Yokohama(横浜)
-              </div>
+              <div>&ensp;&ensp;横浜にて美容師として働き始める</div>
             </div>
           </motion.div>
           <motion.div
@@ -123,7 +119,7 @@ export const Profile = () => {
           >
             <div css={yearStyle}>
               <div style={{ fontWeight: "bold" }}>2021</div>
-              <div>&ensp;&ensp;Start Working as a Software Engineer</div>
+              <div>&ensp;&ensp;職業訓練を経て、エンジニアとして働き始める</div>
             </div>
           </motion.div>
         </section>
