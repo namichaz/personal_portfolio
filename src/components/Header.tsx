@@ -11,8 +11,9 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ContentCutIcon from "@mui/icons-material/ContentCut";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
-const pages = ["profile", "skills", "hobby"];
+const pages = ["profile", "skills"];
 
 function Header() {
   const navigate = useNavigate();
@@ -31,6 +32,8 @@ function Header() {
 
   const handleSelectMenu = (event: React.MouseEvent<HTMLElement>) => {
     const path = event.currentTarget.textContent;
+    console.log(path);
+
     navigate(`/${path}`);
   };
   const handleSelectMenu2 = (event: React.MouseEvent<HTMLElement>) => {
@@ -48,12 +51,19 @@ function Header() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <ContentCutIcon
-            sx={{
-              display: { xs: "none", md: "flex", color: "#FFFF9E" },
-              mr: 1,
-            }}
-          />
+          <motion.div whileHover={{ scale: 1.3 }}>
+            <ContentCutIcon
+              sx={{
+                display: {
+                  xs: "none",
+                  md: "flex",
+                  color: "#FFFF9E",
+                },
+                mr: 1,
+              }}
+            />
+          </motion.div>
+
           <Typography
             variant="h6"
             noWrap
@@ -62,7 +72,7 @@ function Header() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "Impact",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "#FFFF9E",
@@ -80,6 +90,7 @@ function Header() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              href="/"
             >
               <MenuIcon />
             </IconButton>

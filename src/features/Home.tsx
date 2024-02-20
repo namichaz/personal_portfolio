@@ -62,13 +62,7 @@ export const Home = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         />
-        <div css={textOntheImage}>
-          Hi, I'm Tatsuya
-          <br />
-          I'm a Software Engineer
-          <br />
-          This is my personal portfolio
-        </div>
+        <div css={textOntheImage}>This is my personal portfolio</div>
       </article>
       <Footer />
     </main>

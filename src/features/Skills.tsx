@@ -2,29 +2,27 @@
 import { css } from "@emotion/react";
 import Graph from "components/Graph";
 import React from "react";
-import js from "../assets/svg/javascript.svg";
-import cs from "../assets/svg/css-3.svg";
-import html5 from "../assets/svg/html.svg";
-import reactSvg from "../assets/svg/react.svg";
-import express from "../assets/svg/express.svg";
-import c from "../assets/svg/c.svg";
-import postgres from "../assets/svg/postgres.svg";
-import oracle from "../assets/svg/oracle.svg";
-import mysql from "../assets/svg/mysql.svg";
 import Header from "components/Header";
 import Footer from "components/Footer";
+import { motion } from "framer-motion";
 
 export const Skills = () => {
   const articleStyle = css({
     width: "100vw",
-    height: "100vh",
+    height: "auto",
     backgroundColor: "lightgray",
-    paddingTop: "50px",
+    padding: "30px",
   });
   const textStyle = css({
-    paddingLeft: "10%",
+    padding: "0 25%",
     textAlign: "start",
     display: "flex",
+  });
+  const textStyle2 = css({
+    padding: "0 25%",
+    textAlign: "start",
+    display: "flex",
+    paddingTop: "3%",
   });
   const topicStyle = css({
     textDecoration: "underline",
@@ -32,135 +30,79 @@ export const Skills = () => {
     fontFamily: "monospace",
     fontSize: 26,
     fontWeight: "bold",
-    paddingLeft: "25%",
+    paddingLeft: "24%",
     color: "#FFFF9E",
+    paddingBottom: "3%",
   });
+  const context = css({
+    color: "white",
+    fontSize: "1rem",
+    paddingTop: "5%",
+    paddingLeft: "5%",
+    fontFamily: "monospace",
+    width: "20rem",
+  });
+
   const languageData = [
-    { id: 0, value: 24, label: "Javascript", color: "#FFD700" },
-    { id: 1, value: 18, label: "CSS", color: "#2C7CFF" },
-    { id: 2, value: 18, label: "HTML", color: "#FF5F17" },
-    { id: 3, value: 7, label: "C#", color: "#9370DB" },
+    { id: 0, value: 24, label: "Javascript", color: "#FFFFDD" },
+    { id: 1, value: 18, label: "CSS", color: "#A4C6FF" },
+    { id: 2, value: 18, label: "HTML", color: "#FFDBC9" },
+    { id: 3, value: 7, label: "C#", color: "#EAD9FF" },
   ];
   const frameworkData = [
-    { id: 0, value: 5, label: "Express", color: "black" },
-    { id: 1, value: 4, label: "React", color: "aqua" },
+    { id: 0, value: 5, label: "Express", color: "#AAAAAA" },
+    { id: 1, value: 4, label: "React", color: "#C2EEFF" },
   ];
   const databaseData = [
-    { id: 0, value: 13, label: "PostgreSQL", color: "#4682B4" },
-    { id: 1, value: 7, label: "Oracle", color: "red" },
-    { id: 2, value: 1, label: "MySQL", color: "#FF9933" },
+    { id: 0, value: 13, label: "PostgreSQL", color: "#75A9FF" },
+    { id: 1, value: 7, label: "Oracle", color: "#FA8072" },
   ];
 
   return (
     <>
       <Header />
       <article css={articleStyle}>
-        <div css={topicStyle}>Skills</div>
+        <div css={topicStyle}>Skills </div>
         <section css={textStyle}>
           <Graph data={languageData} title={"Language"} />
-          <div
-            style={{ display: "contents", gap: "40px", paddingLeft: "10px" }}
-          >
-            <img src={js} alt="Icon" style={{ width: "7%" }} />
-            <img
-              src={cs}
-              alt="Icon"
-              style={{ width: "7%", paddingLeft: "30px" }}
-            />
-            <img
-              src={html5}
-              alt="Icon"
-              style={{ width: "10%", paddingTop: "20px" }}
-            />
-            <img
-              src={c}
-              alt="Icon"
-              style={{ width: "7%", paddingTop: "15px" }}
-            />
+          <div css={context}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              言語として一番使用歴が長いのはJavascriptになります。
+              フロントエンドの業務に携わることが多く、フレームワーク無しのバニラJSを使用する機会が多かったです。
+              html、cssなども一通り扱うことができます。
+            </motion.div>
           </div>
         </section>
-        <section css={textStyle}>
+        <section css={textStyle2}>
           <Graph data={frameworkData} title={"Framework"} />
-          <div
-            style={{ display: "contents", gap: "40px", paddingLeft: "10px" }}
-          >
-            <img
-              src={reactSvg}
-              alt="Icon"
-              style={{ width: "7%", paddingLeft: "17%" }}
-            />
-            <img
-              src={express}
-              alt="Icon"
-              style={{
-                width: "7%",
-                paddingTop: "10px",
-                paddingLeft: "30px",
-              }}
-            />
+          <div css={context}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              フレームワークは実務での経験はあまりありませんが、Reactを一番使用してます。
+              プライベートではVue.jsやNext.jsを勉強中です。
+            </motion.div>
           </div>
         </section>
-        <section css={textStyle}>
+        <section css={textStyle2}>
           <Graph data={databaseData} title={"Database"} />
-          <div
-            style={{ display: "contents", gap: "40px", paddingLeft: "10px" }}
-          >
-            <img
-              src={postgres}
-              alt="Icon"
-              style={{ width: "6%", paddingLeft: "10%" }}
-            />
-            <img
-              src={oracle}
-              alt="Icon"
-              style={{ width: "6%", paddingTop: "10px", paddingLeft: "30px" }}
-            />
-            <img
-              src={mysql}
-              alt="Icon"
-              style={{ width: "6%", paddingTop: "10px", paddingLeft: "30px" }}
-            />
+          <div css={context}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              データベースの中ではPostgresを一番使用してきました。
+              次いでOracleも使えます。実務経験は無いですが、Mysqlも使用したことがあります。
+            </motion.div>
           </div>
         </section>
-        {/* <section css={textStyle2}>
-          <Graph data={frameworkData} title={"Framework"} />
-          <div
-            style={{ display: "contents", gap: "40px", paddingLeft: "100px" }}
-          >
-            <img
-              src={reactSvg}
-              alt="Icon"
-              style={{ width: "10%", paddingLeft: "30px" }}
-            />
-            <img
-              src={express}
-              alt="Icon"
-              style={{ width: "10%", paddingTop: "10px", paddingLeft: "30px" }}
-            />
-          </div>
-        </section> */}
-        {/* <section css={textStyle3}>
-          <Graph data={databaseData} title={"DataBase"} />
-          <div
-            style={{ display: "contents", gap: "40px", paddingLeft: "100px" }}
-          >
-            <img
-              src={postgres}
-              alt="Icon"
-              style={{ width: "6%", paddingLeft: "30px" }}
-            />
-            <img
-              src={oracle}
-              alt="Icon"
-              style={{ width: "6%", paddingTop: "10px", paddingLeft: "30px" }}
-            />
-            <img
-              src={mysql}
-              alt="Icon"
-              style={{ width: "6%", paddingTop: "10px", paddingLeft: "30px" }}
-            />
-          </div>
-        </section> */}
       </article>
       <Footer />
     </>
