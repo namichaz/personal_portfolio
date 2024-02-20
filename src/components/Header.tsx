@@ -34,11 +34,11 @@ function Header() {
     const path = event.currentTarget.textContent;
     console.log(path);
 
-    navigate(`/${path}`);
+    navigate(`${process.env.PUBLIC_URL}/${path}`);
   };
   const handleSelectMenu2 = (event: React.MouseEvent<HTMLElement>) => {
     const path = event.currentTarget.textContent;
-    navigate(`/${path}`);
+    navigate(`${process.env.PUBLIC_URL}/${path}`);
   };
 
   return (
