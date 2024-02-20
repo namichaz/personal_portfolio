@@ -7,7 +7,6 @@ import { Skills } from "features/Skills";
 import Hobby from "features/Hobby";
 
 function App() {
-  const APP_NAME: String = "personal_portfolio";
   return (
     <Routes>
       {/* <Route path={APP_NAME + "/"} element={<Home />} />
