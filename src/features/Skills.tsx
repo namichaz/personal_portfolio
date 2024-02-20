@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import Graph from "components/Graph";
+import Graph from "../components/Graph";
 import React from "react";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
 export const Skills = () => {
