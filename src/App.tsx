@@ -17,6 +17,7 @@ function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/hobby" element={<Hobby />} />
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 }
