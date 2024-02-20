@@ -1,28 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d552d91.css",
-    "main.js": "/static/js/main.07d51bd1.js",
-    "static/media/home4.jpeg": "/static/media/home4.01750c29f8a8480d463a.jpeg",
-    "static/media/home3.jpeg": "/static/media/home3.ec8c98af7c302d72da18.jpeg",
-    "static/media/mexicanfood.jpeg": "/static/media/mexicanfood.f50bbe5a83b72a8f209e.jpeg",
-    "static/media/cut.jpeg": "/static/media/cut.9fdcea8c2c39843f6da6.jpeg",
-    "static/media/home.jpeg": "/static/media/home.f72369f470c52b513b80.jpeg",
-    "static/media/profile.jpeg": "/static/media/profile.2452ca26674456b05bf5.jpeg",
-    "static/media/postgres.svg": "/static/media/postgres.9aed68683d15cfc3c3fd8ddf1d89ff4e.svg",
-    "static/media/react.svg": "/static/media/react.598d90dd4f36234e376cbc6ccd571550.svg",
-    "static/media/mysql.svg": "/static/media/mysql.5dbd7ffb56a921cecde426cca82f0df4.svg",
-    "static/media/oracle.svg": "/static/media/oracle.141a2ce4513ac336f8999965a41bec76.svg",
-    "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
-    "static/media/c.svg": "/static/media/c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
-    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
-    "static/media/html.svg": "/static/media/html.e248da514edac2a2a66bde8fa0166701.svg",
-    "static/media/express.svg": "/static/media/express.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
-    "index.html": "/index.html",
-    "main.9d552d91.css.map": "/static/css/main.9d552d91.css.map",
-    "main.07d51bd1.js.map": "/static/js/main.07d51bd1.js.map"
+    "main.css": "/personal_portfolio/static/css/main.75bc7d61.css",
+    "main.js": "/personal_portfolio/static/js/main.b0f38805.js",
+    "static/media/cut.jpeg": "/personal_portfolio/static/media/cut.9fdcea8c2c39843f6da6.jpeg",
+    "static/media/home.jpeg": "/personal_portfolio/static/media/home.f72369f470c52b513b80.jpeg",
+    "static/media/profile.jpeg": "/personal_portfolio/static/media/profile.2452ca26674456b05bf5.jpeg",
+    "index.html": "/personal_portfolio/index.html",
+    "main.75bc7d61.css.map": "/personal_portfolio/static/css/main.75bc7d61.css.map",
+    "main.b0f38805.js.map": "/personal_portfolio/static/js/main.b0f38805.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d552d91.css",
-    "static/js/main.07d51bd1.js"
+    "static/css/main.75bc7d61.css",
+    "static/js/main.b0f38805.js"
   ]
 }
