@@ -17,12 +17,20 @@ export const Skills = () => {
     padding: "0 25%",
     textAlign: "start",
     display: "flex",
+    alignItems: "center",
+    "> div": {
+      height: "200px !important",
+    },
   });
   const textStyle2 = css({
     padding: "0 25%",
     textAlign: "start",
     display: "flex",
     paddingTop: "3%",
+    alignItems: "center",
+    "> div": {
+      height: "200px !important",
+    },
   });
   const topicStyle = css({
     textDecoration: "underline",
