@@ -26,7 +26,7 @@ export const Home = () => {
   const imageStyle = css({
     width: "100%",
     height: "auto",
-    maxHeight: "850px",
+    maxHeight: "fit-content",
     maxWidth: "100%",
     minWidth: "auto",
     position: "relative",
@@ -36,7 +36,7 @@ export const Home = () => {
   const textOntheImage = css({
     color: "white",
     fontSize: "1.5rem",
-    fontFamily: "monospace",
+    fontFamily: "auto",
     position: "absolute",
     top: "50%",
     left: "50%",

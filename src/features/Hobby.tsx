@@ -9,7 +9,7 @@ import Card from "components/Card";
 
 const nameStyle = css({
   letterSpacing: 2,
-  fontFamily: "monospace",
+  fontFamily: "auto",
   fontSize: 30,
   display: "flex",
   color: "#FFFF9E",
@@ -18,14 +18,14 @@ const nameStyle = css({
 
 const textStyle2 = css({
   fontSize: 16,
-  fontFamily: "monospace",
+  fontFamily: "auto",
   color: "white",
   width: "100%",
 });
 const topicStyle = css({
   textDecoration: "underline",
   lineHeight: 2,
-  fontFamily: "monospace",
+  fontFamily: "auto",
   fontSize: 26,
   fontWeight: "bold",
   padding: "0 25%",
@@ -35,7 +35,7 @@ const topicStyle = css({
 const yearStyle = css({
   display: "flex",
   fontSize: 16,
-  fontFamily: "monospace",
+  fontFamily: "auto",
   padding: "0 25%",
 });
 

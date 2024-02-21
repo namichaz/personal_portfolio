@@ -35,7 +35,7 @@ export const Skills = () => {
   const topicStyle = css({
     textDecoration: "underline",
     lineHeight: 2,
-    fontFamily: "monospace",
+    fontFamily: "auto",
     fontSize: 26,
     fontWeight: "bold",
     paddingLeft: "24%",
@@ -47,7 +47,7 @@ export const Skills = () => {
     fontSize: "1rem",
     paddingTop: "5%",
     paddingLeft: "5%",
-    fontFamily: "monospace",
+    fontFamily: "auto",
     width: "20rem",
   });
 

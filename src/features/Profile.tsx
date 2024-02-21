@@ -17,7 +17,7 @@ export const Profile = () => {
 
   const nameStyle = css({
     letterSpacing: 2,
-    fontFamily: "monospace",
+    fontFamily: "auto",
     fontSize: 30,
     display: "flex",
     padding: "0px 25%",
@@ -29,7 +29,7 @@ export const Profile = () => {
   const topicStyle = css({
     textDecoration: "underline",
     lineHeight: 2,
-    fontFamily: "monospace",
+    fontFamily: "auto",
     fontSize: 26,
     fontWeight: "bold",
     padding: "0 25%",
@@ -39,18 +39,18 @@ export const Profile = () => {
   const yearStyle = css({
     display: "flex",
     fontSize: 16,
-    fontFamily: "monospace",
+    fontFamily: "auto",
     padding: "0 25%",
   });
   const textStyle = css({
     fontSize: 16,
-    fontFamily: "monospace",
+    fontFamily: "auto",
     padding: "0 25%",
     textAlign: "start",
   });
   const textStyle2 = css({
     fontSize: 16,
-    fontFamily: "monospace",
+    fontFamily: "auto",
     padding: "0 25%",
     paddingTop: 30,
     // opacity: 0.5,
