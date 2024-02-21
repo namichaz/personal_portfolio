@@ -46,7 +46,8 @@ export const Profile = () => {
     fontSize: 16,
     fontFamily: "auto",
     padding: "0 25%",
-    textAlign: "start",
+    // textAlign: "start",
+    wordBreak: "break-word",
   });
   const textStyle2 = css({
     fontSize: 16,
@@ -142,11 +143,10 @@ export const Profile = () => {
               transition={{ duration: 0.7, delay: 0.4 }}
             >
               <div css={textStyle}>
-                &ensp;&ensp;美容専門学校を卒業後、横浜にて美容師としてのキャリアをスタート。合計10年ほど美容師として従事する。
-                <br />
-                美容師としてのキャリアに限界を感じ、転職を決意。
-                <br />
-                ホテルマン、法人営業などを経た後、職業訓練で触れたプログラミングが楽しかったことによりプログラマーに方向転換。
+                &ensp;&ensp;大阪の美容専門学校を卒業後、横浜にて美容師として働き始めました。横浜市内で2店舗を経験し、約10年ほど美容師として生活してました。
+                30歳目前で今後の人生を考えた際に美容師としてのキャリアに限界を感じ転職を決意し、大阪に戻りました。
+                ホテルマン、法人営業などを経た後、職業訓練で触れたプログラミングが楽しかったことによりIT業界へ入る事を決めました。
+                まだ経験は浅いですが、色々な新しい技術に挑戦していきたいと考えております。
               </div>
             </motion.div>
           </section>
@@ -166,6 +166,8 @@ export const Profile = () => {
               </div>
             </motion.div>
           </section>
+          <br />
+          <br />
           <br />
           <br />
           <br />

@@ -10,7 +10,7 @@ export const Home = () => {
 
   const mainStyle = css({
     width: "100%",
-    height: "auto",
+    height: "100vh",
     backgroundColor: "lightgray",
     position: "relative",
   });
@@ -18,6 +18,7 @@ export const Home = () => {
   const imageContainerStyle = css({
     position: "relative",
     overflow: "hidden",
+    height: "100%",
     "&:hover img": {
       filter: "brightness(40%)",
     },
@@ -25,8 +26,8 @@ export const Home = () => {
 
   const imageStyle = css({
     width: "100%",
-    height: "auto",
-    maxHeight: "fit-content",
+    // height: "auto",
+    // maxHeight: "fit-content",
     maxWidth: "100%",
     minWidth: "auto",
     position: "relative",
