@@ -79,8 +79,6 @@ export const Profile = () => {
             />
           </div>
         </section>
-        <br />
-        <br />
         <section style={{ lineHeight: 2 }}>
           <div css={topicStyle}>Bio</div>
           <motion.div
@@ -90,7 +88,7 @@ export const Profile = () => {
           >
             <div css={yearStyle}>
               <div style={{ fontWeight: "bold" }}>1988</div>
-              <div>&ensp;&ensp;兵庫県生まれ</div>
+              <div>&ensp;&ensp;兵庫県に生まれる</div>
             </div>
           </motion.div>
           <motion.div
