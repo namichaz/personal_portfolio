@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export const Skills = () => {
   const articleStyle = css({
-    // width: "100vw",
+    width: "100%",
     height: "auto",
     backgroundColor: "lightgray",
     padding: "30px",

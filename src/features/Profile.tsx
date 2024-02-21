@@ -9,7 +9,8 @@ import { motion } from "framer-motion";
 
 export const Profile = () => {
   const articleStyle = css({
-    width: "100vw",
+    width: "100%",
+    height: "auto",
     backgroundColor: "lightgray",
     color: "white",
   });

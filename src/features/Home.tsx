@@ -9,8 +9,8 @@ export const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const mainStyle = css({
-    width: "100vw",
-    height: "100vh",
+    width: "100%",
+    height: "auto",
     backgroundColor: "lightgray",
     position: "relative",
   });
