@@ -55,120 +55,137 @@ export const Profile = () => {
     paddingTop: 30,
     // opacity: 0.5,
   });
+  const main = css({
+    width: "100%",
+    height: "auto",
+    maxHeight: "100vh",
+  });
 
   return (
     <>
-      <Header />
-      <article css={articleStyle}>
-        <div css={textStyle2}>なみかわ たつや</div>
-        <section css={nameStyle}>
-          <div>Tatsuya Namikawa</div>
-        </section>
-        <section style={{ paddingLeft: "60%" }}>
-          <div style={{ display: "flex" }}>
-            <img
-              style={{
-                borderRadius: "50%",
-                width: "100%",
-                height: "auto",
-                maxWidth: "130px",
-                border: "solid",
-              }}
-              src={profilePic}
-              alt=""
-            />
-          </div>
-        </section>
-        <section style={{ lineHeight: 2 }}>
-          <div css={topicStyle}>Bio</div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <div css={yearStyle}>
-              <div style={{ fontWeight: "bold" }}>1988</div>
-              <div>&ensp;&ensp;兵庫県に生まれる</div>
+      <div css={main}>
+        <Header />
+        <article css={articleStyle}>
+          <div css={textStyle2}>なみかわ たつや</div>
+          <section css={nameStyle}>
+            <div>Tatsuya Namikawa</div>
+          </section>
+          <section style={{ paddingLeft: "60%" }}>
+            <div style={{ display: "flex" }}>
+              <img
+                style={{
+                  borderRadius: "50%",
+                  width: "100%",
+                  height: "auto",
+                  maxWidth: "130px",
+                  border: "solid",
+                }}
+                src={profilePic}
+                alt=""
+              />
             </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <div css={yearStyle}>
-              <div style={{ fontWeight: "bold" }}>2009</div>
-              <div>&ensp;&ensp;関西美容専門学校 卒業</div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <div css={yearStyle}>
-              <div style={{ fontWeight: "bold" }}>2009</div>
-              <div>&ensp;&ensp;横浜にて美容師として働き始める</div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <div css={yearStyle}>
-              <div style={{ fontWeight: "bold" }}>2021</div>
-              <div>&ensp;&ensp;職業訓練を経て、エンジニアとして働き始める</div>
-            </div>
-          </motion.div>
-        </section>
-        <br />
-        <br />
-        <br />
-        <br />
-        <section style={{ lineHeight: 2 }}>
-          <div css={topicStyle}>Work</div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <div css={textStyle}>
-              &ensp;&ensp;美容専門学校を卒業後、横浜にて美容師としてのキャリアをスタート。合計10年ほど美容師として従事する。
-              <br />
-              美容師としてのキャリアに限界を感じ、転職を決意。
-              <br />
-              ホテルマン、法人営業などを経た後、職業訓練で触れたプログラミングが楽しかったことによりプログラマーに方向転換。
-            </div>
-          </motion.div>
-        </section>
-        <br />
-        <br />
-        <br />
-        <br />
-        <section style={{ lineHeight: 2 }}>
-          <div css={topicStyle}>Favorite</div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-          >
-            <div css={textStyle}>
-              &ensp;&ensp;甘いもの、旅行、メキシコ料理、深煎りのコーヒー
-            </div>
-          </motion.div>
-        </section>
-        <br />
-        <br />
+          </section>
+          <section style={{ lineHeight: 2 }}>
+            <div css={topicStyle}>Bio</div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              <div css={yearStyle}>
+                <div style={{ fontWeight: "bold" }}>1988</div>
+                <div>&ensp;&ensp;兵庫県に生まれる</div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              <div css={yearStyle}>
+                <div style={{ fontWeight: "bold" }}>2009</div>
+                <div>&ensp;&ensp;関西美容専門学校 卒業</div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              <div css={yearStyle}>
+                <div style={{ fontWeight: "bold" }}>2009</div>
+                <div>&ensp;&ensp;横浜にて美容師として働き始める</div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              <div css={yearStyle}>
+                <div style={{ fontWeight: "bold" }}>2021</div>
+                <div>
+                  &ensp;&ensp;職業訓練を経て、エンジニアとして働き始める
+                </div>
+              </div>
+            </motion.div>
+          </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          <section style={{ lineHeight: 2 }}>
+            <div css={topicStyle}>Work</div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              <div css={textStyle}>
+                &ensp;&ensp;美容専門学校を卒業後、横浜にて美容師としてのキャリアをスタート。合計10年ほど美容師として従事する。
+                <br />
+                美容師としてのキャリアに限界を感じ、転職を決意。
+                <br />
+                ホテルマン、法人営業などを経た後、職業訓練で触れたプログラミングが楽しかったことによりプログラマーに方向転換。
+              </div>
+            </motion.div>
+          </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          <section style={{ lineHeight: 2 }}>
+            <div css={topicStyle}>Favorite</div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              <div css={textStyle}>
+                &ensp;&ensp;甘いもの、旅行、メキシコ料理、深煎りのコーヒー
+              </div>
+            </motion.div>
+          </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
 
-        {/* <br />
+          {/* <br />
         <br />
         <br />
         <section style={{ paddingLeft: "6%", backgroundColor: "lightgray" }}>
           <Slider />
         </section> */}
-      </article>
-      <Footer />
+        </article>
+        <Footer />
+      </div>
     </>
   );
 };
